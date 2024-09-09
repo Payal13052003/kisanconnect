@@ -11,6 +11,7 @@ import Register_Seller from './components/Register_Seller';
 import Footer from './components/Footer'; 
 import NotFound from './components/NotFound';
 import AddProduct from './components/AddProduct';
+import Profile from './components/Profile';
 
 import './App.css';
 import Logout from './components/Logout';
@@ -30,6 +31,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/products/add" element={<AddProduct />} />
+        <Route path="/profile" element={<Profile />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
